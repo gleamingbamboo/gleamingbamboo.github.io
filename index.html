@@ -1,129 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Work experience of Eduard Lytvyn, Python developer."
-    >
-    <title>Work Experience | Eduard Lytvyn</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        color: #202b38;
-        background: #f5f7fa;
-        font-synthesis: none;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Eduard Lytvyn — Python Developer, AI/ML Engineer, and DevOps professional."/>
+  <title>Eduard Lytvyn — Python Developer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #020617, var(--bg));
+      color: var(--text);
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn.secondary {
+      background: #1f2933;
+      color: var(--text);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgb(0 0 0 / 30%);
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      padding: 26px;
+      border-radius: 18px;
+      background: rgb(17 24 39 / 85%);
+      box-shadow: 0 10px 30px rgb(0 0 0 / 35%);
+    }
+
+    .card.summary,
+    .card.experience {
+      grid-column: 1 / -1;
+    }
+
+    .badge {
+      display: inline-block;
+      margin: 4px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: #1f2933;
+      font-size: 0.9rem;
+    }
+
+    .job {
+      margin-bottom: 22px;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job strong,
+    .education strong {
+      color: white;
+    }
+
+    .job small {
+      display: inline-block;
+      margin: 3px 0 8px;
+      color: var(--muted);
+    }
+
+    .education p + p {
+      margin-top: 14px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
       }
 
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        padding: 64px 24px;
-      }
-
-      main {
-        width: min(100%, 760px);
-        margin: 0 auto;
-        padding: 48px;
-        border: 1px solid #e4e9ef;
-        border-radius: 16px;
-        background: #fff;
-        box-shadow: 0 16px 48px rgb(23 39 58 / 6%);
+      .card.summary,
+      .card.experience {
+        grid-column: auto;
       }
 
       h1 {
-        margin: 0 0 36px;
-        color: #14283e;
-        font-size: clamp(2rem, 5vw, 2.5rem);
-        letter-spacing: -0.04em;
-        line-height: 1.15;
+        font-size: 2rem;
       }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Eduard Lytvyn</h1>
+      <p><strong>Python Developer · AI/ML Engineer · DevOps</strong></p>
+      <p>Kyiv, Ukraine</p>
+      <p>
+        <a href="mailto:gleaming_bamboo@hotmail.com">gleaming_bamboo@hotmail.com</a>
+        · <a href="mailto:therma_cpp@gmail.com">therma_cpp@gmail.com</a>
+        · <a href="tel:+380730921258">+380 73 092 12 58</a>
+      </p>
+      <p class="btn-group">
+        <a class="btn secondary" href="ATS_cv.pdf" download>Download CV</a>
+      </p>
+    </header>
 
-      article {
-        padding: 0 0 28px;
-        border-bottom: 1px solid #e8edf2;
-      }
+    <section class="grid">
+      <div class="card summary">
+        <h2>Summary</h2>
+        <p>
+          Motivated software engineer with experience in backend development,
+          DevOps, and AI/ML. Skilled in building scalable backend systems,
+          automation, and deploying machine-learning models into production.
+          Seeking a challenging role in a forward-thinking organization.
+        </p>
+      </div>
 
-      article + article {
-        padding-top: 28px;
-      }
+      <div class="card">
+        <h2>Programming</h2>
+        <div>
+          <span class="badge">Python</span>
+          <span class="badge">FastAPI</span>
+          <span class="badge">Flask</span>
+          <span class="badge">Django</span>
+          <span class="badge">React</span>
+          <span class="badge">Pytest</span>
+          <span class="badge">asyncio</span>
+        </div>
+      </div>
 
-      article:last-child {
-        padding-bottom: 0;
-        border-bottom: 0;
-      }
+      <div class="card">
+        <h2>Data, DevOps &amp; AI/ML</h2>
+        <div>
+          <span class="badge">SQLAlchemy</span>
+          <span class="badge">MySQL</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">OpenSearch</span>
+          <span class="badge">Kafka</span>
+          <span class="badge">Redis</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Kubernetes</span>
+          <span class="badge">Git</span>
+          <span class="badge">GitHub Actions</span>
+          <span class="badge">Ansible</span>
+          <span class="badge">Proxmox</span>
+          <span class="badge">Terraform</span>
+          <span class="badge">Prometheus</span>
+          <span class="badge">Grafana</span>
+          <span class="badge">PyTorch</span>
+          <span class="badge">LangChain</span>
+          <span class="badge">LangGraph</span>
+          <span class="badge">Ollama</span>
+        </div>
+      </div>
 
-      h2 {
-        margin: 0;
-        color: #1b2b3c;
-        font-size: 1.125rem;
-        font-weight: 650;
-        line-height: 1.5;
-      }
-
-      .dates {
-        margin: 4px 0 12px;
-        color: #65768a;
-        font-size: 0.9375rem;
-      }
-
-      article p:last-child {
-        margin: 0;
-        color: #435367;
-        font-size: 1rem;
-        line-height: 1.75;
-      }
-
-      @media (max-width: 600px) {
-        body {
-          padding: 24px 16px;
-        }
-
-        main {
-          padding: 32px 24px;
-          border-radius: 12px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <section aria-labelledby="experience-heading">
-        <h1 id="experience-heading">Work Experience</h1>
-
-        <article>
-          <h2>Playtika — Python Developer</h2>
-          <p class="dates"><time datetime="2021">2021</time>–<time datetime="2025">2025</time></p>
+      <div class="card experience">
+        <h2>Work Experience</h2>
+        <article class="job">
+          <strong>Playtika — Python Developer</strong><br/>
+          <small><time datetime="2021">2021</time>–<time datetime="2025">2025</time></small>
           <p>
-            Designed, developed, and maintained backend microservices with Python,
-            FastAPI, and Flask. Improved response times by 25% through code
-            optimization and caching, and added unit and integration tests with
-            Pytest. Collaborated with cross-functional teams to deploy services
-            using Docker and Kubernetes, and integrated Prometheus and Grafana for
-            real-time performance monitoring.
+            Designed, developed, and maintained backend microservices using
+            Python, FastAPI, and Flask. Improved response times by 25% through
+            code optimization and caching. Implemented unit and integration
+            tests with Pytest, collaborated on deployments with Docker and
+            Kubernetes, and integrated Prometheus and Grafana for real-time
+            performance monitoring.
           </p>
         </article>
 
-        <article>
-          <h2>Admitad — System Administrator</h2>
-          <p class="dates"><time datetime="2019">2019</time>–<time datetime="2021">2021</time></p>
+        <article class="job">
+          <strong>Admitad — System Administrator</strong><br/>
+          <small><time datetime="2019">2019</time>–<time datetime="2021">2021</time></small>
           <p>
             Maintained company IT infrastructure, supporting 99.9% uptime and
-            reliable security. Built internal tools to automate user creation and
-            system provisioning, and automated deployments with Ansible and
-            Terraform. Monitored systems with Grafana and Prometheus and managed
-            Proxmox and Hyper-V clusters, optimizing resource use.
+            robust security. Developed internal tools for automated user
+            creation and system provisioning, monitored systems with Grafana
+            and Prometheus, and automated deployments with Ansible and
+            Terraform. Managed Proxmox and Hyper-V clusters and optimized
+            resource utilization.
           </p>
         </article>
-      </section>
-    </main>
-  </body>
+      </div>
+
+      <div class="card education">
+        <h2>Education</h2>
+        <p>
+          <strong>Taras Shevchenko National University of Kyiv</strong><br/>
+          Bachelor of Science in Physics · 2019
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Eduard Lytvyn · Python Developer, AI/ML Engineer, DevOps</p>
+    </footer>
+  </div>
+</body>
 </html>
